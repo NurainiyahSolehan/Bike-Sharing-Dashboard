@@ -1,32 +1,19 @@
 # Bike Sharing Dashboard 
 
-## Setup Environment - Visual Studio Code
+Dashboard interaktif untuk menganalisis data peminjaman sepeda menggunakan Streamlit.
 
-Follow these steps to set up the project environment in Visual Studio Code using Python 3.11.4.
+## Fitur
+- Menampilkan statistik peminjaman harian dan bulanan
+- Visualisasi data dengan grafik interaktif
+- Filter data berdasarkan cuaca dan musim
 
-### Prerequisites
+## Library
+- Python
+- Streamlit
+- Pandas
+- Matplotlib & Seaborn
 
-Ensure you have the following installed:
+## Run Streamlit App
+streamlit run Dashboard.py
 
-- Python 3.11.4: Install Python from [here](https://www.python.org/downloads/release/python-3114/).
-- Visual Studio Code: Install VS Code from [here](https://code.visualstudio.com/Download).
-- Python Extension for VS Code: Install the Python extension in VS Code.
-
-### Setup Environment
-
-Create a New Project Folder:
-Open a terminal in Visual Studio Code and create a new folder for your project:
-
-   ```bash
-   mkdir bike_sharing_dashboard
-   cd bike_sharing_dashboard
-
-Install Required Libraries:
-pip install -r requirements.txt
-pip install streamlit pandas matplotlib seaborn
-
-## Run steamlit app
-```
-streamlit run dashboard.py
-```
 
