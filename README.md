@@ -18,8 +18,8 @@ Create a New Project Folder:
 Open a terminal in Visual Studio Code and create a new folder for your project:
 
    ```bash
-   mkdir bike_sharing_dashboard
-   cd bike_sharing_dashboard
+   mkdir Dashboard
+   cd Dashboard
 
 Install Required Libraries:
 pip install -r requirements.txt
@@ -27,6 +27,6 @@ pip install streamlit pandas matplotlib seaborn
 
 ## Run steamlit app
 ```
-streamlit run dashboard.py
+streamlit run Dashboard.py
 ```
 
