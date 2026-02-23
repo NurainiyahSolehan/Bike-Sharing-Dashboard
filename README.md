@@ -1,55 +1,93 @@
-# Bike Sharing Dashboard 
+# Bike Sharing Data Analysis and Visualization
 
-An interactive data dashboard built using **Streamlit** to analyze bike-sharing usage patterns.
-This project explores how time, weather conditions, and working-day status influence bike rental demand through data visualization and exploratory data analysis.
+## Overview
 
----
-
-## Project Objective
-The objectives of this project are:
-- To analyze trends in bike-sharing usage over time
-- To examine the impact of weather conditions on bike rental demand
-- To compare bike usage patterns between working days and non-working days
-- To provide interactive visualizations that support data-driven insights
+This project aims to **analyze bike sharing usage patterns** using the Bike Sharing Dataset to answer key **business questions** related to rental trends, weather conditions, and working day behavior. The analysis is conducted through **Exploratory Data Analysis (EDA)** and **data visualization**, and the results are presented in an **interactive dashboard deployed using Streamlit**.
 
 ---
 
 ## Business Questions
-This project aims to answer the following business questions:
-- How does the bike-sharing usage trend change throughout the year (2011)?
-- How does weather conditions (*weathersit*) affect bike rental demand?
-- What is the comparison of bike rentals between working days and non-working days?
+
+This analysis focuses on answering the following questions:
+
+1. How does the bike rental trend behave throughout the year 2011?
+2. How do bike rentals vary across different weather conditions (*weathersit*)?
+3. How do bike rental volumes compare between working days and non-working days?
 
 ---
 
-## Key Insights
-- Bike rentals tend to increase during spring and summer, with a peak in the middle of the year, and decline during fall and winter.
-- Weather conditions significantly affect bike rental demand. Clear weather results in the highest number of rentals, while rainy conditions cause a sharp decrease.
-- Bike usage is generally higher on non-working days, indicating that many users utilize bike-sharing services for recreational purposes rather than daily commuting.
+## Dataset
+
+The dataset used in this project is the **Bike Sharing Dataset**, which contains information on bike rentals based on time, weather, and user categories.
+
+The dataset directory includes:
+
+* `day.csv` – Daily aggregated bike rental data
+* `hour.csv` – Hourly aggregated bike rental data
+
+In this analysis, **only the `day.csv` dataset is used**, as daily data provides a broader view of rental trends without focusing on hourly fluctuations.
 
 ---
 
-## Tech Stack
-- Python
-- Pandas
-- Streamlit
-- Matplotlib
-- Seaborn
+## Analysis Workflow
+
+The project follows these steps:
+
+1. Data Loading
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Data Visualization
+5. Insight and Business Interpretation
+6. Dashboard Deployment using Streamlit
 
 ---
 
-## Setup Environment (Visual Studio Code)
+## Key Findings
 
-### Prerequisites
-Ensure you have the following installed:
-- Python 3.11.4
-- Visual Studio Code
-- Python Extension for Visual Studio Code
+### 1. Bike Rental Trend in 2011
+
+* Bike rentals show a **gradual increase** from January to mid-year (July–August).
+* Rental volume peaks around **June–July**, with several days exceeding **6,000 rentals**.
+* After August, rentals **decline steadily**, with a sharper decrease toward the end of the year (November–December).
+
+**Conclusion:**
+Bike rentals tend to increase during spring and summer, peak in mid-year, and decline during autumn and winter. To mitigate seasonal drops, **promotional campaigns or discounts during winter** could help maintain user engagement.
 
 ---
 
-## Installation
-Install the required libraries by running:
-```bash
-pip install -r requirements.txt
-pip install streamlit pandas matplotlib seaborn
+### 2. Bike Rentals by Weather Condition
+
+* **Clear weather** records the highest average rentals, close to **5,000 rentals per day**.
+* **Cloudy weather** shows slightly lower rentals, around **4,000 per day**, but still maintains strong usage.
+* **Rainy weather** has the lowest rental volume, below **2,500 per day**, with higher variability.
+
+**Conclusion:**
+Weather has a significant impact on bike rentals. **Incentives or promotions during rainy days** may help encourage usage despite unfavorable conditions.
+
+---
+
+### 3. Working Day vs Non-Working Day Comparison
+
+* **Non-working days** have higher rental volumes than working days.
+* Average rentals:
+
+  * Working days: approximately **4,200–4,400 per day**
+  * Non-working days: approximately **4,500–4,700 per day**
+* Non-working days are primarily associated with **recreational usage**, while working days indicate strong **commuter usage**.
+
+**Conclusion:**
+Marketing strategies can be optimized by offering **weekend promotions** for recreational users and improving infrastructure or services for commuters on working days, such as safe bike lanes and dedicated parking.
+
+---
+
+## Tools and Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Streamlit
+
+---
+
